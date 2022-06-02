@@ -256,7 +256,7 @@
             <!-- Layout Isi -->
             <div class="col py-3">
               <div class="d-flex justify-content-between">
-                <h3>Kelola User Siswa</h3>
+                <h3><span class="text-muted fw-light">Master Data</span> / Kelola Karyawan</h3>
 
                 <div class="d-flex">
                   <div class="dropdown me-3">
@@ -296,7 +296,9 @@
             </div>
             <!--/ Layout Isi -->
             <!-- Table -->
-            <table class="table">
+            <div class="card">
+              <div class="table-respnseive text-nowrap">
+                <table class="table">
               <thead class="table-light">
                 <tr>
                   <th>#</th>
@@ -317,9 +319,8 @@
                   <td>me@gamil.com</td>
                   <td><span class="badge bg-label-success me-1">asmrup</span></td>
                   <td>
-                    <button type="button" class="btn dropdown-toggle hide-arrow btn-warning btn-sm"
-                      data-bs-toggle="modal"
-          data-bs-target="#modalCenter">
+                    <button type="button" class="btn dropdown-toggle hide-arrow btn-warning btn-sm" data-bs-toggle="modal"
+                      data-bs-target="#modalCenter">
                       Edit
                     </button>
 
@@ -333,9 +334,8 @@
                   <td>me@gamil.com</td>
                   <td><span class="badge bg-label-success me-1">asmrup</span></td>
                   <td>
-                    <button type="button" class="btn dropdown-toggle hide-arrow btn-warning btn-sm"
-                      data-bs-toggle="modal"
-          data-bs-target="#modalCenter">
+                    <button type="button" class="btn dropdown-toggle hide-arrow btn-warning btn-sm" data-bs-toggle="modal"
+                      data-bs-target="#modalCenter">
                       Edit
                     </button>
                   </td>
@@ -348,9 +348,8 @@
                   <td>me@gamil.com</td>
                   <td><span class="badge bg-label-success me-1">asmrup</span></td>
                   <td>
-                    <button type="button" class="btn dropdown-toggle hide-arrow btn-warning btn-sm"
-                      data-bs-toggle="modal"
-          data-bs-target="#modalCenter">
+                    <button type="button" class="btn dropdown-toggle hide-arrow btn-warning btn-sm" data-bs-toggle="modal"
+                      data-bs-target="#modalCenter">
                       Edit
                     </button>
                   </td>
@@ -365,15 +364,16 @@
                   <td>me@gamil.com</td>
                   <td><span class="badge bg-label-success me-1">asmrup</span></td>
                   <td>
-                    <button type="button" class="btn dropdown-toggle hide-arrow btn-warning btn-sm"
-                      data-bs-toggle="modal"
-          data-bs-target="#modalCenter">
+                    <button type="button" class="btn dropdown-toggle hide-arrow btn-warning btn-sm" data-bs-toggle="modal"
+                      data-bs-target="#modalCenter">
                       Edit
                     </button>
                   </td>
                 </tr>
               </tbody>
             </table>
+              </div>
+            </div>
             <!--/ Table -->
           </div>
         </div>
@@ -397,88 +397,58 @@
 
 
   <div class="modal fade" id="modalCenter" tabindex="-1" aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="modalCenterTitle">Edit User</h5>
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="modal"
-                  aria-label="Close"
-                ></button>
-              </div>
-              <div class="modal-body">
-                <div class="row">
-                  <div class="col mb-3">
-                    <label for="nameWithTitle" class="form-label">Nama User</label>
-                    <input
-                      type="text"
-                      id="nameWithTitle"
-                      class="form-control"
-                      placeholder="Enter Name"
-                    />
-                  </div>
-                </div>
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalCenterTitle">Edit User</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col mb-3">
+              <label for="nameWithTitle" class="form-label">Nama User</label>
+              <input type="text" id="nameWithTitle" class="form-control" placeholder="Enter Name" />
+            </div>
+          </div>
 
-              <div class="row">
-                  <div class="col mb-3">
-                    <label for="nameWithTitle" class="form-label">NIS</label>
-                    <input
-                      type="text"
-                      id="nameWithTitle"
-                      class="form-control"
-                      placeholder="Enter NIS"
-                    />
-                  </div>
-                </div>
-              <div class="row">
-                  <div class="col mb-3">
-                    <label for="nameWithTitle" class="form-label">Kelas</label>
-                    <input
-                      type="text"
-                      id="nameWithTitle"
-                      class="form-control"
-                      placeholder="Enter Class"
-                    />
-                  </div>
-                </div>
-              <div class="row">
-                  <div class="col mb-3">
-                    <label for="nameWithTitle" class="form-label">No Telepon</label>
-                    <input
-                      type="text"
-                      id="nameWithTitle"
-                      class="form-control"
-                      placeholder="Enter Your Number"
-                    />
-                  </div>
-                </div>
-              <div class="row">
-                  <div class="col mb-3">
-                    <label for="nameWithTitle" class="form-label">Email</label>
-                    <input
-                      type="text"
-                      id="nameWithTitle"
-                      class="form-control"
-                      placeholder="Enter Your Email"
-                    />
-                  </div>
-                </div>
-              </div>
-              <div class="main-footer text-center mb-4 mr-5">
-              <button type="button" class="btn btn-outline-warning">Reset Password</button>
-              <button type="button" class="btn btn-outline-warning">Reset Device ID</button>
-              </div>
-              <div class="main-footer text-center mb-4 mr-5">
-                <button type="button" class="btn btn-outline-secondary " data-bs-dismiss="modal">
-                  Batal
-                </button>
-                <button type="button" class="btn btn-success">Simpan</button>
-              </div>
+          <div class="row">
+            <div class="col mb-3">
+              <label for="nameWithTitle" class="form-label">NIS</label>
+              <input type="text" id="nameWithTitle" class="form-control" placeholder="Enter NIS" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col mb-3">
+              <label for="nameWithTitle" class="form-label">Kelas</label>
+              <input type="text" id="nameWithTitle" class="form-control" placeholder="Enter Class" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col mb-3">
+              <label for="nameWithTitle" class="form-label">No Telepon</label>
+              <input type="text" id="nameWithTitle" class="form-control" placeholder="Enter Your Number" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col mb-3">
+              <label for="nameWithTitle" class="form-label">Email</label>
+              <input type="text" id="nameWithTitle" class="form-control" placeholder="Enter Your Email" />
             </div>
           </div>
         </div>
+        <div class="main-footer text-center mb-4 mr-5">
+          <button type="button" class="btn btn-outline-warning">Reset Password</button>
+          <button type="button" class="btn btn-outline-warning">Reset Device ID</button>
+        </div>
+        <div class="main-footer text-center mb-4 mr-5">
+          <button type="button" class="btn btn-outline-secondary " data-bs-dismiss="modal">
+            Batal
+          </button>
+          <button type="button" class="btn btn-success">Simpan</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- Core JS -->
   <!-- build:js assets/vendor/js/core.js -->
