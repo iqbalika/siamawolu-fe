@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
 
-    <title>Dashboard | Siamawolu</title>
+    <title>Dashboard | Dashboard</title>
 
     <meta name="description" content="" />
 
@@ -64,8 +64,8 @@
 
                 <ul class="menu-inner py-1">
                     <!-- Dashboard -->
-                    <li class="menu-item">
-                        <a href="dashboard.html" class="menu-link">
+                    <li class="menu-item active">
+                        <a href="index.html" class="menu-link">
                             <i class="menu-icon tf-icons bx bx-home-circle"></i>
                             <div data-i18n="Analytics">Dashboard</div>
                         </a>
@@ -77,10 +77,12 @@
                     <li class="menu-header small text-uppercase">
                         <span class="menu-header-text">Alat</span>
                         </li>
-                        <li class="menu-item active">
+                        <li class="menu-item">
                             <a href="javascript:void(0);" class="menu-link menu-toggle">
                                 <i class="menu-icon tf-icons bx bx-key"></i>
-                                <div data-i18n="Layouts">Master Data</div>
+                                <div data-i18n="Layouts">
+                                    Master Data
+                                </div>
                             </a>
 
                             <ul class="menu-sub">
@@ -103,13 +105,13 @@
                                     </a>
                                 </li>
                                 <li class="menu-item">
-                                    <a href="#" class="menu-link">
+                                    <a href="layouts-fluid.html" class="menu-link">
                                         <i class="menu-icon tf-icons bx bx-calendar-plus"></i>
                                         <div data-i18n="Jadwal">Jadwal</div>
                                     </a>
                                 </li>
-                                <li class="menu-item active">
-                                    <a href="./masterkelas.html" class="menu-link">
+                                <li class="menu-item">
+                                    <a href="layouts-blank.html" class="menu-link">
                                         <i class="menu-icon tf-icons bx bx-map-alt"></i>
                                         <div data-i18n="Kelas">Kelas</div>
                                     </a>
@@ -176,7 +178,81 @@
             <div class="layout-page">
                 <!-- Navbar -->
 
+                <nav class="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme" id="layout-navbar">
+                    <div class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0 d-xl-none">
+                        <a class="nav-item nav-link px-0 me-xl-4" href="javascript:void(0)">
+                            <i class="bx bx-menu bx-sm"></i>
+                        </a>
+                    </div>
 
+                    <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
+
+
+                        <ul class="navbar-nav flex-row align-items-center ms-auto">
+
+
+                            <!-- User -->
+                            <li class="nav-item navbar-dropdown dropdown-user dropdown">
+                                <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
+                                    <div class="avatar avatar-online">
+                                        <img src="../dist/assets/img/avatars/1.png" alt class="w-px-40 h-auto rounded-circle" />
+                                    </div>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end">
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <div class="d-flex">
+                                                <div class="flex-shrink-0 me-3">
+                                                    <div class="avatar avatar-online">
+                                                        <img src="../dist/assets/img/avatars/1.png" alt class="w-px-40 h-auto rounded-circle" />
+                                                    </div>
+                                                </div>
+                                                <div class="flex-grow-1">
+                                                    <span class="fw-semibold d-block">John Doe</span>
+                                                    <small class="text-muted">Admin</small>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <div class="dropdown-divider"></div>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <i class="bx bx-user me-2"></i>
+                                            <span class="align-middle">My Profile</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <i class="bx bx-cog me-2"></i>
+                                            <span class="align-middle">Settings</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <span class="d-flex align-items-center align-middle">
+                                                <i class="flex-shrink-0 bx bx-credit-card me-2"></i>
+                                                <span class="flex-grow-1 align-middle">Billing</span>
+                                            <span class="flex-shrink-0 badge badge-center rounded-pill bg-danger w-px-20 h-px-20">4</span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <div class="dropdown-divider"></div>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="auth-login-basic.html">
+                                            <i class="bx bx-power-off me-2"></i>
+                                            <span class="align-middle">Log Out</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!--/ User -->
+                        </ul>
+                    </div>
+                </nav>
 
                 <!-- / Navbar -->
 
@@ -184,154 +260,46 @@
                 <div class="content-wrapper">
                     <!-- Content -->
 
-                    <div class="container-xxl flex-grow-1 container-p-y">
-                        <h3><span class="text-muted fw-light">
-                                Master Data</span> / Kelola Kelas</h3>
+                    <!-- <div class="container-xxl flex-grow-1 container-p-y">
                         <div class="row">
-                            <div class="col-md-12">
-                                <ul class="nav nav-pills flex-column flex-md-row mb-3">
-                                    <li class="nav-item">
-                                        <a class="nav-link active" href="javascript:void(0);"><i
-                                                class="bx bx-plus-circle"></i> Tambah Kelas</a>
-                                    </li>
-                                    <li class="nav-item ms-4">
-                                        <a class="nav-link active" href="#"><i class="bx bx-band-aid"></i> Edit
-                                            Kelas</a>
-                                    </li>
-                                    <div class="d-flex ms-auto">
-                                        <div class="dropdown me-3">
-                                            <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                                Kelas XI
-                                            </button>
-                                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                                <li><a class="dropdown-item" href="#">Kelas X</a></li>
-                                                <li><a class="dropdown-item" href="#">Kelas XI</a></li>
-                                                <li><a class="dropdown-item" href="#">Kelas XII</a></li>
-                                            </ul>
+                            <div class="col-lg-12 mb-4 order-0">
+                                <div class="card">
+                                    <div class="d-flex align-items-end row">
+                                        <div class="col-sm-7">
+                                            <div class="card-body">
+                                                <h5 class="card-title text-primary">Selamat Datang,
+                                                    <span class="fw-boldbb">Admin!</span> </h5>
+                                                <p class="mb-4">
+                                                    You have done <span class="fw-bold">72%</span> more sales today. Check your new badge in your profile.
+                                                </p>
+
+                                                <a href="javascript:;" class="btn btn-sm btn-outline-primary">View
+                                                    Badges</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-5 text-center text-sm-left">
+                                            <div class="card-body pb-0 px-0 px-md-4">
+                                                <img src="../dist/assets/img/illustrations/man-with-laptop-light.png" height="140" alt="View Badge User" data-app-dark-img="illustrations/man-with-laptop-dark.png" data-app-light-img="illustrations/man-with-laptop-light.png" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            Total Revenue -->
+                    <!-- <div class="col-12 col-lg-8 order-2 order-md-3 order-lg-2 mb-4">
+                                <div class="card pb-5">
+                                    <div class="row row-bordered g-0">
+                                        <div class="col-md-8">
+                                            <h5 class="card-header m-0 me-2 pb-3">Total Revenue</h5>
                                         </div>
 
-
-
-                                    </div>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6 col-xl-4">
-                                <div class="card shadow-none bg-transparent border border-secondary mb-3">
-                                    <div class="card-body">
-                                        <h5 class="card-title">XI-RPL-1</h5>
-                                        <p class="card-text">SMK NEGERI 8 SEMARANG
-                                        </p>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-md-6 col-xl-4">
-                                <div class="card shadow-none bg-transparent border border-secondary mb-3">
-                                    <div class="card-body">
-                                        <h5 class="card-title">XI-RPL-2</h5>
-                                        <p class="card-text">SMK NEGERI 8 SEMARANG
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-xl-4">
-                                <div class="card shadow-none bg-transparent border border-secondary mb-3">
-                                    <div class="card-body">
-                                        <h5 class="card-title">XI-RPL-3</h5>
-                                        <p class="card-text">SMK NEGERI 8 SEMARANG
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-xl-4">
-                                <div class="card shadow-none bg-transparent border border-secondary mb-3">
-                                    <div class="card-body">
-                                        <h5 class="card-title">XI-TKJ-1</h5>
-                                        <p class="card-text">SMK NEGERI 8 SEMARANG
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-xl-4">
-                                <div class="card shadow-none bg-transparent border border-secondary mb-3">
-                                    <div class="card-body">
-                                        <h5 class="card-title">XI-TKJ-2</h5>
-                                        <p class="card-text">SMK NEGERI 8 SEMARANG
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-xl-4">
-                                <div class="card shadow-none bg-transparent border border-secondary mb-3">
-                                    <div class="card-body">
-                                        <h5 class="card-title">XI-MM-1</h5>
-                                        <p class="card-text">SMK NEGERI 8 SEMARANG
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-xl-4">
-                                <div class="card shadow-none bg-transparent border border-secondary mb-3">
-                                    <div class="card-body">
-                                        <h5 class="card-title">XI-MM-2</h5>
-                                        <p class="card-text">SMK NEGERI 8 SEMARANG
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-xl-4">
-                                <div class="card shadow-none bg-transparent border border-secondary mb-3">
-                                    <div class="card-body">
-                                        <h5 class="card-title">XI-MM-3</h5>
-                                        <p class="card-text">SMK NEGERI 8 SEMARANG
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-xl-4">
-                                <div class="card shadow-none bg-transparent border border-secondary mb-3">
-                                    <div class="card-body">
-                                        <h5 class="card-title">XI-PS-1</h5>
-                                        <p class="card-text">SMK NEGERI 8 SEMARANG
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-xl-4">
-                                <div class="card shadow-none bg-transparent border border-secondary mb-3">
-                                    <div class="card-body">
-                                        <h5 class="card-title">XI-PS-2</h5>
-                                        <p class="card-text">SMK NEGERI 8 SEMARANG
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-xl-4">
-                                <div class="card shadow-none bg-transparent border border-secondary mb-3">
-                                    <div class="card-body">
-                                        <h5 class="card-title">XI-CG-1</h5>
-                                        <p class="card-text">SMK NEGERI 8 SEMARANG
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-xl-4">
-                                <div class="card shadow-none bg-transparent border border-secondary mb-3">
-                                    <div class="card-body">
-                                        <h5 class="card-title">XI-CG-2</h5>
-                                        <p class="card-text">SMK NEGERI 8 SEMARANG
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                            </div> -->
+                    <!--/ Total Revenue -->
 
                 </div>
-
-
-            </div>
 
             </div> -->
             <!-- / Content -->
@@ -339,10 +307,10 @@
 
 
             <div class="content-backdrop fade"></div>
+            </div>
+            <!-- Content wrapper -->
         </div>
-        <!-- Content wrapper -->
-    </div>
-    <!-- / Layout page -->
+        <!-- / Layout page -->
     </div>
 
     <!-- Overlay -->
