@@ -1,7 +1,9 @@
-****
+---
+
 ##Finish
 
-* ###Master
+- ###Master
+
 1. Dashboard
 2. Login
 3. Master Guru
@@ -11,13 +13,15 @@
 7. Master Siswa
 8. Modal
 
-* ###Rekap
+- ###Rekap
+
 1. Rekap Karyawan
 2. Rekap Siswa
 
+---
 
-***
 ## On Going
+
 1. Rekap Guru
 2. Rekap Jadwal
 3. Jurnal Guru
