@@ -1,10 +1,19 @@
 <!DOCTYPE html>
 
-<html lang="en" class="light-style layout-menu-fixed" dir="ltr" data-theme="theme-default" data-assets-path="../dist/assets/" data-template="vertical-menu-template-free">
-
-<head>
+<html
+  lang="en"
+  class="light-style layout-menu-fixed"
+  dir="ltr"
+  data-theme="theme-default"
+  data-assets-path="../dist/assets/"
+  data-template="vertical-menu-template-free"
+>
+  <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
+    />
 
     <title>Modals - UI elements | Sneat - Bootstrap 5 HTML Admin Template - Pro</title>
 
@@ -16,7 +25,10 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Icons. Uncomment required icon fonts -->
     <link rel="stylesheet" href="../dist/assets/vendor/fonts/boxicons.css" />
@@ -37,193 +49,280 @@
     <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
     <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
     <script src="../dist/assets/js/config.js"></script>
-</head>
+  </head>
 
-<body>
-    <!-- Layout wrapper -->
+  <body>
+    <!-- Modal Edit User/Siswa-->
     <!-- Vertically Centered Modal -->
     <div class="col-lg-4 col-md-6">
-        <small class="text-light fw-semibold">Vertically centered</small>
-        <div class="mt-3">
-            <!-- Button trigger modal -->
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalCenter">
-        Launch modal
+      <small class="text-light fw-semibold">Edit User Siswa</small>
+      <div class="mt-3">
+        <!-- Button trigger modal -->
+        <button
+          type="button"
+          class="btn btn-primary"
+          data-bs-toggle="modal"
+          data-bs-target="#modalCenter"
+        >
+          Launch modal
+        </button>
+
+        <!-- Modal Edit Siswa -->
+        <div class="modal fade" id="modalCenter" tabindex="-1" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalCenterTitle">Edit User</h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <div class="row">
+                  <div class="col mb-3">
+                    <label for="nameWithTitle" class="form-label">Nama User</label>
+                    <input
+                      type="text"
+                      id="nameWithTitle"
+                      class="form-control"
+                      placeholder="Enter Name"
+                    />
+                  </div>
+                </div>
+
+              <div class="row">
+                  <div class="col mb-3">
+                    <label for="nameWithTitle" class="form-label">NIS</label>
+                    <input
+                      type="text"
+                      id="nameWithTitle"
+                      class="form-control"
+                      placeholder="Enter NIS"
+                    />
+                  </div>
+                </div>
+              <div class="row">
+                  <div class="col mb-3">
+                    <label for="nameWithTitle" class="form-label">Kelas</label>
+                    <input
+                      type="text"
+                      id="nameWithTitle"
+                      class="form-control"
+                      placeholder="Enter Class"
+                    />
+                  </div>
+                </div>
+              <div class="row">
+                  <div class="col mb-3">
+                    <label for="nameWithTitle" class="form-label">No Telepon</label>
+                    <input
+                      type="text"
+                      id="nameWithTitle"
+                      class="form-control"
+                      placeholder="Enter Your Number"
+                    />
+                  </div>
+                </div>
+              <div class="row">
+                  <div class="col mb-3">
+                    <label for="nameWithTitle" class="form-label">Email</label>
+                    <input
+                      type="text"
+                      id="nameWithTitle"
+                      class="form-control"
+                      placeholder="Enter Your Email"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="main-footer text-center mb-4 mr-5">
+              <button type="button" class="btn btn-outline-warning">Reset Password</button>
+              <button type="button" class="btn btn-outline-warning">Reset Device ID</button>
+              </div>
+              <div class="main-footer text-center mb-4 mr-5">
+                <button type="button" class="btn btn-outline-secondary " data-bs-dismiss="modal">
+                  Batal
+                </button>
+                <button type="button" class="btn btn-success">Simpan</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Modal Siswa -->
+      </div>
+    </div>
+    <!-- End Modal Edit User/Siswa-->
+
+
+
+    <!-- Modal Tambah User Dengan CSV -->
+    <!-- Vertically Centered Modal -->
+    <div class="col-lg-4 col-md-6 mt-4">
+      <small class="text-light fw-semibold">Tambah CSV</small>
+      <div class="mt-3">
+        <!-- Button trigger modal -->
+        <button
+        type="button"
+        class="btn btn-primary"
+        data-bs-toggle="modal"
+        data-bs-target="#smallModal"
+      >
+        Tambah CSV
       </button>
 
+        <!-- Modal Tambah Dengan CSV -->
+        <!-- Small Modal -->
+        <div class="modal fade" id="smallModal" tabindex="-1" aria-hidden="true">
+          <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel2">Tambah User Dengan CSV</h5>
+              </div>
+              <div class="modal-body text-center">
+              <img src="../dist/assets/img/favicon/Upload Illustration.png" alt="">
+              <p>Drag atau <a href="#">upload</a> file kamu di sini</p>
+              </div>
+              <div class="main-footer text-center mb-4">
+                <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
+                  Batal
+                </button>
+                <button type="button" class="btn btn-success">Simpan</button>
+              </div>
+            </div>
+          <!-- End Tambah Dengan CSV -->
+    </div>
+    </div>
+
+    <!-- End Tambah User Dengan CSV -->
+
+
+    <!-- Index Jadwal -->
+    <!-- Default Modal -->
+    <div class="col-lg-4 col-md-6 mt-4">
+      <small class="text-light fw-semibold">Index Jadwal</small>
+      <div class="mt-3">
+        <!-- Button trigger modal -->
+        <button
+          type="button"
+          class="btn btn-primary"
+          data-bs-toggle="modal"
+          data-bs-target="#basicModal"
+        >
+          Index Jadwal
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="basicModal" tabindex="-1" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title fs-2" id="exampleModalLabel1">Edit Jadwal</h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <div class="row">
+                  <div class="col mb-3">
+                    <label for="nameBasic" class="form-label">Mata Pelajaran</label>
+                    <input type="text" id="nameBasic" class="form-control" placeholder="Masukan Mata Pelajaran" />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col mb-3">
+                    <label for="nameBasic" class="form-label">Nama Guru</label>
+                    <input type="text" id="nameBasic" class="form-control" placeholder="Masukan Nama Guru" />
+                  </div>
+                </div>
+
+              </div>
+              <div class="main-footer text-center mb-4">
+                <button type="button" class="btn btn-outline-success" data-bs-dismiss="modal">
+                  Batal
+                </button>
+                <button type="button" class="btn btn-success">Simpan</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Index Jadwal -->
+
+
+    <!-- Filter Rekap Jurnal -->
+        <!-- Modal Rekap Jurnal -->
+        <div class="col-lg-4 col-md-6 mt-4">
+          <small class="text-light fw-semibold">Filter Rekap Jurnal</small>
+          <div class="mt-3">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalTop">
+              Rekap Jurnal
+            </button>
+
             <!-- Modal -->
-            <div class="modal fade" id="modalCenter" tabindex="-1" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="modalCenterTitle">Edit User</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <div class="row">
-                                <div class="col mb-3">
-                                    <label for="nameWithTitle" class="form-label">Nama User</label>
-                                    <input type="text" id="nameWithTitle" class="form-control" placeholder="Enter Name" />
-                                </div>
-                            </div>
+            <div class="modal modal-top fade" id="modalTop" tabindex="-1">
+              <div class="modal-dialog">
+                <form class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="modalTopTitle">Filter Rekap Jurnal</h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="mb-3">
+                      <label for="select2Basic" class="form-label">Pilih Tanggal</label>
+                      <select id="select2Basic" type="date" class="select2 form-select form-select-lg" data-allow-clear="true">
+                        <option value="4">4-6-2022</option>
+                        <option value="5">5-6-2022</option>
+                        <option value="6">6-6-2022</option>
+                      </select>
+                      </div>
 
-                            <div class="row">
-                                <div class="col mb-3">
-                                    <label for="nameWithTitle" class="form-label">NIS</label>
-                                    <input type="text" id="nameWithTitle" class="form-control" placeholder="Enter NIS" />
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col mb-3">
-                                    <label for="nameWithTitle" class="form-label">Kelas</label>
-                                    <input type="text" id="nameWithTitle" class="form-control" placeholder="Enter Class" />
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col mb-3">
-                                    <label for="nameWithTitle" class="form-label">No Telepon</label>
-                                    <input type="text" id="nameWithTitle" class="form-control" placeholder="Enter Your Number" />
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col mb-3">
-                                    <label for="nameWithTitle" class="form-label">Email</label>
-                                    <input type="text" id="nameWithTitle" class="form-control" placeholder="Enter Your Email" />
-                                </div>
-                            </div>
-                        </div>
-                        <div class="main-footer text-center mb-4 mr-5">
-                            <button type="button" class="btn btn-outline-warning">Reset Password</button>
-                            <button type="button" class="btn btn-outline-warning">Reset Device ID</button>
-                        </div>
-                        <div class="main-footer text-center mb-4 mr-5">
-                            <button type="button" class="btn btn-outline-secondary " data-bs-dismiss="modal">
-                Batal
-              </button>
-                            <button type="button" class="btn btn-success">Simpan</button>
-                        </div>
-                    </div>
-                </div>
+                    <div class="mb-3">
+                      <label for="select2Basic" class="form-label">Pembelajaran</label>
+                      <select id="select2Basic" class="select2 form-select form-select-lg" data-allow-clear="true">
+                        <option value="MTK">MTK</option>
+                        <option value="BI">Bahasa Indonesia</option>
+                        <option value="PJOK">PJOK</option>
+                      </select>
+                      </div>
+                    <div class="mb-3">
+                      <label for="select2Basic" class="form-label">Kelas</label>
+                      <select id="select2Basic" class="select2 form-select form-select-lg" data-allow-clear="true">
+                         <option value="rpl1">XI RPL 1</option>
+                         <option value="rpl2">XI RPL 2</option>
+                         <option value="rpl3">XI RPL 3</option>
+                       </select>
+                      </div>
+                  </div>
+                  <div class="main-footer text-center mb-4">
+                    <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
+                      Batal
+                    </button>
+                    <button type="button" class="btn btn-success">Terapkan</button>
+                  </div>
+                </form>
+              </div>
             </div>
+          </div>
         </div>
+    
+        <!-- End Modal Rekap Jurnal -->
+      </div>
     </div>
-    <!-- TOMBOLL -->
-    <a type="button" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modalEditGuru">
-        <i class="bx bx-user-plus"></i> Tambah User
-    </a>
-    <!-- MODAL GURU -->
-    <div class="modal fade" id="modalEditGuru" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="modalCenterTitle">Edit Guru</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="row">
-                        <div class="col mb-3">
-                            <label for="nameWithTitle" class="form-label">Nama User</label>
-                            <input type="text" id="nameWithTitle" class="form-control" placeholder="Enter Name" />
-                        </div>
-                    </div>
+    <!-- End Filter Rekap Jurnal -->
 
-                    <div class="row">
-                        <div class="col mb-3">
-                            <label for="nameWithTitle" class="form-label">NIP</label>
-                            <input type="text" id="nameWithTitle" class="form-control" placeholder="Enter NIP" />
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col mb-3">
-                            <label for="nameWithTitle" class="form-label">No Telepone</label>
-                            <input type="text" id="nameWithTitle" class="form-control" placeholder="Enter Your Number" />
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col mb-3">
-                            <label for="nameWithTitle" class="form-label">Email</label>
-                            <input type="text" id="nameWithTitle" class="form-control" placeholder="Enter Your Email" />
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col mb-3">
-                            <label for="nameWithTitle" class="form-label">Email</label>
-                            <input type="text" id="nameWithTitle" class="form-control" placeholder="Enter Your Email" />
-                        </div>
-                    </div>
-                </div>
-                <div class="main-footer text-center mb-4 mr-5">
-                    <button type="button" class="btn btn-outline-warning">Reset Password</button>
-                    <button type="button" class="btn btn-outline-warning">Reset Device ID</button>
-                </div>
-                <div class="main-footer text-center mb-4 mr-5">
-                    <button type="button" class="btn btn-outline-secondary " data-bs-dismiss="modal">
-            Batal
-          </button>
-                    <button type="button" class="btn btn-success">Simpan</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- MODAL KARYAWAN -->
-    <a type="button" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modalEditKaryawan">
-        <i class="bx bx-user-plus"></i> Edit
-    </a>
-
-    <div class="modal fade" id="modalEditKaryawan" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="modalCenterTitle">Edit Guru</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="row">
-                        <div class="col mb-3">
-                            <label for="nameWithTitle" class="form-label">Nama Karyawan</label>
-                            <input type="text" id="nameWithTitle" class="form-control" placeholder="Enter Name" />
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col mb-3">
-                            <label for="nameWithTitle" class="form-label">NIP</label>
-                            <input type="text" id="nameWithTitle" class="form-control" placeholder="Enter NIP" />
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col mb-3">
-                            <label for="nameWithTitle" class="form-label">No Telepone</label>
-                            <input type="text" id="nameWithTitle" class="form-control" placeholder="Enter Your Number" />
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col mb-3">
-                            <label for="nameWithTitle" class="form-label">Email</label>
-                            <input type="text" id="nameWithTitle" class="form-control" placeholder="Enter Your Email" />
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col mb-3">
-                            <label for="nameWithTitle" class="form-label">Email</label>
-                            <input type="text" id="nameWithTitle" class="form-control" placeholder="Enter Your Email" />
-                        </div>
-                    </div>
-                </div>
-                <div class="main-footer text-center mb-4 mr-5">
-                    <button type="button" class="btn btn-outline-warning">Reset Password</button>
-                    <button type="button" class="btn btn-outline-warning">Reset Device ID</button>
-                </div>
-                <div class="main-footer text-center mb-4 mr-5">
-                    <button type="button" class="btn btn-outline-secondary " data-bs-dismiss="modal">
-            Batal
-          </button>
-                    <button type="button" class="btn btn-success">Simpan</button>
-                </div>
-            </div>
-        </div>
-    </div>
     <!-- Core JS -->
     <!-- build:js assets/vendor/js/core.js -->
     <script src="../dist/assets/vendor/libs/jquery/jquery.js"></script>
@@ -244,6 +343,5 @@
 
     <!-- Place this tag in your head or just before your close body tag. -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>
-</body>
-
+  </body>
 </html>
