@@ -27,9 +27,8 @@
 2. Rekap Siswa
 3. Rekap Jadwal
 4. Jurnal Guru
+5. Rekap Guru
 
 ---
 
 ## On Going
-
-1. Rekap Guru
